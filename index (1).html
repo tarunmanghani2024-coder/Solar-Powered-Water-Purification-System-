@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar Water Pure</title>
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color:#f8f9fa;
+  line-height: 1.7;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+nav a {
+  margin-left: 18px;
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+}
+nav a:hover,
+nav a.active {
+  color:rgb(6, 239, 57);
+  border-bottom: 2px solid white;
+}
+/* ---------- Banner ---------- */
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 720px;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+  overflow: hidden;
+}
+
+.banner-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  /* Add color/shadow to your text here so it stands out over the video */
+}
+
+
+.banner h2 {
+  font-size: 40px;
+  color: white;
+}
+
+/* ---------- Main content ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 30px 0;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 18px 0 10px;
+  color: #222;
+}
+
+h4 {
+  font-size: 17px;
+  margin: 14px 0 4px;
+}
+
+p {
+  margin-bottom: 14px;
+  text-align: justify;
+}
+
+ul,
+ol {
+  margin: 0 0 14px 30px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+a {
+  color:rgb(16, 253, 151);
+  word-break: break-word;
+}
+
+/* ---------- Case study boxes ---------- */
+.case {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-left: 5px solid rgb(14, 247, 134);
+  border-radius: 6px;
+}
+
+.case ul li {
+  margin-bottom: 6px;
+}
+
+.lesson {
+  color:white;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #0af3ad;
+  border-radius: 4px;
+}
+
+/* ---------- Video and form ---------- */
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-top: 20px;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.form {
+  width: 100%;
+  height: 700px;
+  border: 0;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  padding: 30px;
+  text-align: left;
+  background-color: #f1f3f4;
+  border-top: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ---------- Back to top button ---------- */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+  color: #fff;
+  background-color:rgba(85, 248, 85, 0.663);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#topBtn:hover {
+  background-color:rgb(64, 248, 82);
+}
+</style>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header id="top">
+    <a href="#top" class="logo">Solar Water Pure</a>
+    <nav>
+      <a href="#about">About me</a>
+      <a href="#technology">The Technology</a>
+      <a href="#research">Research</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#market">The Market</a>
+      <a href="#further">Further Info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    
+  <video autoplay muted loop playsinline class="banner-video">
+    <source src="https://www.shutterstock.com/shutterstock/videos/4193037833/preview/stock-footage-drone-footage-showing-a-solar-powered-water-pump-system-for-agriculture-in-a-rural-village-green.webm">
+  </video>
+  <div class="banner-content">
+    <h2>Solar Power Water Purification System</h2>
+  </div>
+
+
+  </section>
+  
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About me</h2>
+      <p>Solar water purification' involves purifying water for drinking and household purposes through the usage of solar energy in many different ways. Using solar energy for water treatment has become more common as it is a usually low-technology solution that works to capture the heat and energy from the sun to make water cleaner and healthier for human use and consumption. Solar water treatment is particularly beneficial for rural communities, as they do not have other forms of water purification infrastructure and more importantly, electricity to run such structures. The most positive feature about solar water purification is that there is no requirement of fuel. It's precisely due to the lack of fuel that makes solar applications relatively superior than conventional sources of energy as it does not cause pollution (global warming, acid rain, ozone depletion) or health hazards associated with pollution.</p>
+      <p>There are four main types of solar water treatment: solar water disinfection (SODIS), solar distillation, solar water pasteurization, and solar water treatment systems. Some of these technologies have been around for a very long time, but most are new adaptations to the concept of solar energy. These technologies are quite simple and easy to understand, usually require low financial input, and are proven effective.</p>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section id="technology">
+      <h1>The Technology</h1>
+      <p>The four most common methods for solar water purification </p>
+      <ul>
+        <li>
+          <b>Solar Water Disinfection (SODIS)</b>
+          <p>Solar water disinfection is a low technology, simple process of purifying water using solar energy and solar radiation. SODIS as a technology was first introduced in 1980 by Aftim Acra et al. from the American University of Beirut. The process involves contaminated water being filled in transparent PET or glass bottles which are then exposed to the sun for approximately 6 hours. The UV rays of sun eliminate the diarrhoea-causing pathogens, thereby making the water fit for consumption.</p>
+        </li>
+        <li>
+          <b>Solar Water Distillation</b>
+          <p>Solar water distillation uses a solar still to condense pure water vapour and settle out harmful substances to make clean, pure drinking water. This process is used when the water is brackish containing harmful bacteria, or for settling out heavy metals and also for desalination of sea water.</p>
+        </li>
+        <li>
+          <b>Solar Water Pasteurization</b>
+          <p>Solar water pasteurization involves the use of moderate heat or radiation to kill disease - causing microbes. This heat is provided from cookers that trap solar energy. This method has proven to kill bacteria, viruses, worms and protozoa.</p>
+        </li>
+        <li>
+          <b>Solar Water Purification</b>
+          <p>This method integrates electricity generated from solar energy for water purification. Solar panels generate power for a battery which is used for filtration and purification systems. These structures are generally mobile and are immensely helpful for disaster - relief efforts. They also come in various sizes meant for small scale use to commercial/community supply.</p>
+        </li>
+      </ul>
+
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/6iE3n8vEs4g" title="Solar water purification video" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h1>Research and Pilot Schemes in India</h1>
+      <ul>
+        <li>
+          <b>National Institute of Ocean Technology (NIOT)</b>
+          <p>NIOT has been focusing on utilizing ocean resources for fresh water and renewable energy technology. One of their specific areas of work is the LTTD process, where fresh water is produced using low temperature thermal desalination (LTTD). The LTTD concept involves using the variation in the temperatures of ocean water at different depths. The warm water at upper levels is evaporated using low pressure and the resulting vapour is condensed with the lower levels cold seawater.</p>
+          <p>Efforts: They initially began with a small capacity, laboratory based model of 5 cubic metres/ day to commissioning one land based model of 100 cubic metres/day in Kavaratti and also a desalination plant of 1000 cubic metres/day off the Chennai coast (2005). They have also commissioned and put into operation demonstration power plants based on the LTTD process at North Chennai Thermal Power Station and Tuticorin Thermal Power Station.</p>
+        </li>
+        <li>
+          <b>Department of Science &amp; Technology (DST)</b>
+          <p>DST has supported KG Design Services (KGDS), Coimbatore and National Institute of Ocean Technology (NIOT) to develop and demonstrate a solar thermal desalination plant which harnesses solar energy, concentrates it and produces steam which in turn is used for desalination of sea water through the Linear Fresnel Reflector (LFR) system.</p>
+          <p>Efforts: They have identified a section of land in Kuthiraimozhi village near Narippaiyur, Ramanathapuram where a plant will produce desalinated water at the rate of 6000 liters/ hour; which if successful would be installed in Coimbatore.</p>
+        </li>
+        <li>
+          <b>Gerindtec</b>
+          <p>Gerindtec in India has two solar desalination pilot projects based on the patented technology called Multi Effect Humidification (MEH) process. The MEH technology consists of two repetitively applied work processes in which the first involves, solar collectors delivering the energy to evaporate sea/brackish water and the second part condenses the purified water in the process. (J. Malaviya, Solrico)</p>
+          <p>Efforts: One of the two pilot projects was set up in Chennai, Tamil Nadu and operation of the project was started in August 2011. The so-called MiniSal 1000 has a daily capacity of 1,000 litres of purified drinking water.</p>
+        </li>
+        <li>
+          <b>Bhabha Atomic Research Centre (BARC)</b>
+          <p>BARC scientists in Mumbai have developed a water purifying technology which is either driven by solar or wind energy for desalinating contaminated water besides removing toxic elements, pathogens and turbity. For treating the water, electricity locally produced from sunlight, is used to operate a pressure-driven, membrane-based reverse osmosis process.</p>
+        </li>
+        <li>
+          <b>Developing Indigenous Resources (DIR)</b>
+          <p>DIR has a small scale water purification pilot project concerning around 270 households in Punjab. The aim of their pilot project is to determine which method of water purification is accepted best by the people living in the 'bustee'. Their three methods involve solar, chemical and filtration. </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="case-studies">
+      <h1>Case Studies: Solar-Powered Water Purification in India</h1>
+
+      <div class="case">
+        <h2>Case Study 1: Piramal Sarvajal, Solar-Powered Water ATMs (Rajasthan, Gujarat, Maharashtra)</h2>
+        <h4>Background</h4>
+        <p>Rajasthan, Gujarat and parts of Maharashtra face groundwater that is high in fluoride, salinity and total dissolved solids (TDS). Many villages also have unreliable grid power. Sarvajal, started by Anand Shah and later backed by the Piramal Foundation, set out to deliver safe water as a decentralized, pay-per-use service rather than a one-time infrastructure project.</p>
+        <h4>Technology</h4>
+        <ul>
+          <li>Solar PV panels power the purification unit, often with battery backup or a grid hybrid.</li>
+          <li>The treatment train typically includes sediment filtration, activated carbon, reverse osmosis (RO) and UV disinfection.</li>
+          <li>Water is dispensed through "Water ATMs", where users tap a prepaid RFID card or token to get a fixed volume (for example 20 litres).</li>
+          <li>Remote monitoring tracks water quality, usage and faults.</li>
+        </ul>
+        <h4>Implementation model</h4>
+        <ul>
+          <li>Local entrepreneurs or franchise operators run each unit, which gives them income and a stake in maintenance.</li>
+          <li>Users pay a very small fee per litre, which covers operations, filter replacement and the operator's margin.</li>
+          <li>Central teams monitor remotely and handle servicing.</li>
+        </ul>
+        <h4>Outcomes</h4>
+        <ul>
+          <li>Hundreds of thousands of people gained access to water meeting drinking-water standards.</li>
+          <li>Households stopped relying on contaminated groundwater or expensive tanker water.</li>
+          <li>Fewer cases of water-borne illness were reported in served communities.</li>
+        </ul>
+        <h4>Challenges</h4>
+        <ul>
+          <li>RO produces reject water, which is a concern in water-scarce regions.</li>
+          <li>Some very poor households struggle even with small fees.</li>
+          <li>Filter and membrane replacement must be disciplined or quality drops.</li>
+        </ul>
+        <p class="lesson"><b>Key lesson:</b> Technology alone isn't enough. A sustainable business model with local ownership and monitoring is what keeps units running.</p>
+      </div>
+
+      <div class="case">
+        <h2>Case Study 2: Barefoot College, Tilonia (Rajasthan)</h2>
+        <h4>Background</h4>
+        <p>Barefoot College, founded by Bunker Roy near Ajmer, Rajasthan, is known for community-led solar electrification and water projects. The region is semi-arid, and groundwater is often brackish and unsafe, so safe drinking water is a recurring problem.</p>
+        <h4>Technology</h4>
+        <ul>
+          <li>Solar-powered pumping and purification systems, including solar-run RO and filtration units for brackish water.</li>
+          <li>Rainwater harvesting tanks that supply water for treatment and storage.</li>
+          <li>Solar power avoids dependence on diesel generators and an unstable grid.</li>
+        </ul>
+        <h4>Implementation model</h4>
+        <ul>
+          <li>Rural people, many of them women with little formal education, are trained as "Barefoot" solar engineers and technicians.</li>
+          <li>These trained community members install, maintain and repair the systems.</li>
+          <li>The village takes ownership through local committees that collect small contributions for upkeep.</li>
+        </ul>
+        <h4>Outcomes</h4>
+        <ul>
+          <li>Reliable drinking water in remote hamlets where piped supply is absent.</li>
+          <li>A pool of local technicians who can service systems without outside experts.</li>
+          <li>A model replicated in other parts of India and in other countries.</li>
+        </ul>
+        <h4>Challenges</h4>
+        <ul>
+          <li>Scaling is slow because the training model is intensive.</li>
+          <li>Spare parts and membranes for RO units must be sourced from outside the village.</li>
+          <li>Maintenance funding depends on community contributions, which can lapse.</li>
+        </ul>
+        <p class="lesson"><b>Key lesson:</b> Training local people as technicians is the best protection against a system failing and being abandoned.</p>
+      </div>
+
+      <div class="case">
+        <h2>Case Study 3: Solar-Powered Desalination and Arsenic/Salinity Treatment in the Sundarbans (West Bengal)</h2>
+        <h4>Background</h4>
+        <p>The Sundarbans delta has a distinctive problem: saline water intrusion, cyclone damage (Aila in 2009, Amphan in 2020), and in some areas arsenic and iron contamination. Villages are on remote islands with little or no grid electricity, and tube wells often yield brackish water.</p>
+        <h4>Technology</h4>
+        <ul>
+          <li>Small-scale solar-powered RO or desalination plants, and in some projects arsenic and iron removal units powered by solar panels.</li>
+          <li>Standalone solar systems suit islands where extending the power grid across rivers is difficult and expensive.</li>
+          <li>Systems are designed for village-level supply, typically serving a cluster of households from a community point.</li>
+        </ul>
+        <h4>Implementation model</h4>
+        <ul>
+          <li>NGOs, local panchayats and, in some cases, state or central programs and CSR funders set up the plants.</li>
+          <li>Local committees or self-help groups manage operations and collect nominal user fees.</li>
+        </ul>
+        <h4>Outcomes</h4>
+        <ul>
+          <li>Access to drinking water with salinity and contaminant levels reduced to safe limits.</li>
+          <li>Less reliance on pond water, which is often contaminated and a source of diarrhoeal disease.</li>
+          <li>Water supply that can recover quickly after storms, since solar units can be restarted without grid repair.</li>
+        </ul>
+        <h4>Challenges</h4>
+        <ul>
+          <li>Salt-laden, humid air corrodes equipment and damages panels and electronics.</li>
+          <li>Cyclones can physically destroy systems.</li>
+          <li>Technical support is hard to reach on remote islands.</li>
+          <li>Disposal of brine from desalination needs careful management.</li>
+        </ul>
+        <p class="lesson"><b>Key lesson:</b> Systems in harsh coastal environments need corrosion-resistant design, spare parts nearby and cyclone-resilient siting.</p>
+      </div>
+
+      <div class="case">
+        <h2>Case Study 4: Solar-Powered Piped Rural Water Supply Schemes (Odisha, under state programs and Jal Jeevan Mission)</h2>
+        <h4>Background</h4>
+        <p>Under the Jal Jeevan Mission, India aims to provide tap water connections to rural households. In states like Odisha, with scattered habitations, hilly and forested terrain and poor grid reliability in tribal areas, solar-powered piped water supply has been adopted widely.</p>
+        <h4>Technology</h4>
+        <ul>
+          <li>Solar PV arrays power submersible or surface pumps that lift groundwater to an overhead tank.</li>
+          <li>Water is treated (filtration, chlorination, and iron removal where needed) and distributed by gravity through pipes to community taps or household connections.</li>
+          <li>Many designs use direct solar pumping with a storage tank instead of batteries, which lowers cost and maintenance.</li>
+        </ul>
+        <h4>Implementation model</h4>
+        <ul>
+          <li>State agencies and implementing partners build the schemes.</li>
+          <li>Village water and sanitation committees, with women's self-help group members often playing a major role, handle operation, collect user charges and manage upkeep.</li>
+        </ul>
+        <h4>Outcomes</h4>
+        <ul>
+          <li>Households in remote and tribal habitations get regular water at or near the home, cutting the time women and girls spend fetching water.</li>
+          <li>Electricity bills and diesel costs for pumping drop sharply.</li>
+          <li>Systems run during daytime hours when demand for pumping is highest.</li>
+        </ul>
+        <h4>Challenges</h4>
+        <ul>
+          <li>Output falls during monsoon cloud cover, so adequate storage tank capacity is essential.</li>
+          <li>Theft of solar panels and pumps has been reported in some areas.</li>
+          <li>Water quality testing and treatment must be consistent, since solar pumping addresses energy, not contamination.</li>
+        </ul>
+        <p class="lesson"><b>Key lesson:</b> Solar pumping solves the energy problem, but safe water still depends on proper treatment, testing and community management.</p>
+      </div>
+
+      <h2>Common Lessons</h2>
+      <ol>
+        <li>Community ownership and local technical skills determine whether systems last beyond the first few years.</li>
+        <li>Solar power cuts operating costs and extends service to places the grid doesn't reach.</li>
+        <li>Treatment and monitoring matter as much as power, because clean energy doesn't make contaminated water safe.</li>
+        <li>Financial sustainability needs user fees, subsidies or CSR support to cover membranes, filters and repairs.</li>
+        <li>Design must match the local environment, such as heat, salinity, storms or monsoon cloud.</li>
+      </ol>
+
+      <h3>International Projects Which Includes India in Their Future Efforts</h3>
+      <ul>
+        <li><b>Solvatten</b> is a Swedish invention that uses solar energy to make unsafe water fit for consumption purposes. It is in collaboration to the UN Millennium Development Goals of promoting good health and protection of the environment. The usage of this invention is considered to be easier and cheaper than firewood. As of now, they do not have any pilot projects in india but do have a Solvatten project in Nepal where they have involved 25 households in collaboration with Environmental and Public Health Organization (ENPHO), Nepal. According to the website link it appears that rural India would feature in the future projects of the Solvatten efforts.</li>
+        <li><b>Mörk Water Solutions</b> currently has a pilot project in Zanzibar, Tanzania in cooperation with GIZ, which is being funded by the German Ministry for Economic Cooperation and Development (BMZ) and Dow Chemical. The aim of the project is to improve access to ecologically sustainable and inexpensive drinking water supply for the area of Zanzibar. Their development partner Hochschule Karlsruhe Technik und Wirtschaft has developed a technical system concept based on their expertise and references from a pilot trial in Bangladesh and on-going projects in India (2010-11) on water treatment.
+          <p>The desalination plants that they use for their operations at Zanzibar runs on wind energy but could be easily modified to run on solar energy through the usage of solar photo voltaic panels.</p>
+        </li>
+        <li><b>Pentair</b> is a company that has a pilot project in Kureb, Uttar Pradesh and this initiative seeks to provide clean, drinking water in a manner that is market-based, commercially viable and locally owned. It involves building a small water treatment center with a reverse osmosis system and have an operator sell water that is generated from this system.</li>
+      </ul>
+    </section>
+
+    <!-- MARKET -->
+    <section id="market">
+      <h1>The Market</h1>
+
+      <h3>Potential</h3>
+      <p>According to a World Bank report, 80% of communicable diseases in India are water related and with a population of 1.17 billion, only 15% have access to water fit for consumption purposes. Also, ground water sources have been over-exploited, which has caused the levels of mineral contaminants to increase dramatically. For example, in places such as Rajasthan, Gujarat and Andhra Pradesh, the population is consuming water that has high fluoride content which in turn will lead to increasing health risks such as mass poisoning.</p>
+      <p>Solar distillation is a proven technology for water disinfection and the system can be customized from one person to community sized systems. They have a long life span of about 20 years and generally do not require moving parts. The water purification business in India is undergoing major changes, not just in terms of technology, but also in terms of pricing and competition. The drivers of change include scarcity of clean drinking water, low penetration of water purifiers, increasing urbanization, and waterborne diseases. The main challenges are the lack of standards (for manufacturers) and low awareness levels amongst potential users. The market has also started evolving for a category of consumers who do not have access to running water electricity and lower price point products.</p>
+      <p>As almost 30% of rural India has no access to safe drinking water, consistent electricity source or even the financial means to afford the relatively expensive modes of water purifying products. Therefore providing them with solar water purifiers, which makes use of solar photo voltaic systems would be a step in the right direction as an access to clean, safe, consumable water. There is an untapped opportunity in the rural areas but it is definitely an effort for the long haul.</p>
+
+      <h3>Actors</h3>
+      <p>There are various companies, which are looking into solar water purification as a potential product for untapped rural communities and markets. In India, however a number of factors have to be considered before the initiation of such an effort. For most companies, some of the relatively important factors range from the type of business model to community acceptance of safe water for a price besides having these ventures turn into stable, sustainable operations. The period and amount of returns are uncertain and most companies are still nascent.</p>
+      <p>Government of India is too now willing to work with private parties. For instance, California-based WaterHealth International is in the process of setting up 225 water treatment plants for panchayat blocks in Andhra Pradesh on a build-own-operate-transfer (BOOT) basis. WaterHealth will make its profit from fees charged to users.</p>
+      <p>Moreover, the listed companies under the Research and Pilot Schemes of this article are also actors in this context for solar water purification.</p>
+      <ol>
+        <li>National Institute of Ocean Technology</li>
+        <li>Department of Science and Technology</li>
+        <li>Gerindtec</li>
+        <li>Bhabha Atomic Research Centre</li>
+        <li>Developing Indigenous Resources</li>
+      </ol>
+      <p>In addition, the major players of water purification market in general, Eureka Forbes and Hindustan Unilever Limited are also considering extending their product lines to include renewable energy based products. The Indian market has tremendous potential, which is evident from the fact that global companies (Solvatten, Mörk Water Solutions, Pentair, WaterHealth) in the water purifiers segment have stepped in and are looking to increase their share of the market.</p>
+
+      <h3>Remaining Bottlenecks</h3>
+      <ul>
+        <li>
+          <b>Low Awareness Levels</b>
+          <p>In India, the most predominant form of water purifiers is chemical based technology. The use of chlorine in such a method of purification can be harmful if the dosage is not regularly monitored and administered. In contrast, solar water purification is a much safer method of water treatment, which has no possibility of chemicals decomposing themselves during the treatment of water, thereby producing products harmful to health. However it should be noted, that this method and its products is relatively less known to the general population.</p>
+        </li>
+        <li>
+          <b>Cost</b>
+          <p>Using solar energy as a source of power for products is currently high on absolute costs compared to other sources of power, say coal or kerosene in some states. Potential users of solar water purification systems find themselves unable to pay the full price of the solar still as they simply can't afford the higher up-front capital cost.</p>
+        </li>
+        <li>
+          <b>Lack of any Social Program</b>
+          <p>Without any social program to increase awareness, the question arises if the community residents would both accept and use the technology even if there is no doubt about the success of solar water purification systems. It’s also difficult to gain acceptance from area residents and thereby identify potential clients within that area. The acceptance of the technology is made easier when families learn and are recommended such a system by an institution they knew and trusted.</p>
+        </li>
+        <li>
+          <b>Evaluation issues</b>
+          <p>Even if the design experts of solar water purifiers are fully experienced and possess the expertise in the topic of solar water purification, a few of them can understand the conditions under which these purifiers would work in a community. Only a resident could tell if the purifiers were easy to use and what could be done to improve it. Without such crucial inputs, the spread of solar water purification methods is effectively reduced.</p>
+        </li>
+        <li>
+          <b>Quantity Requirements</b>
+          <p>It is difficult for most users to estimate how much water requirements they have as per seasonal change. In most pilot projects, the most common issue even though it is of a minor nature, is the problem that their water requirements are higher than they availed of via solar water purifiers. In addition, solar water purifiers require a longer time period than say other water purifying methods to deliver its service.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- FURTHER INFO -->
+    <section id="further">
+      <h1>Further Information</h1>
+      <ul>
+        <li>Solar Water Purifier (IIT Madras): <a href="http://www.sristi.org/cms/engenious/case1.pdf" target="_blank">http://www.sristi.org/cms/engenious/case1.pdf</a></li>
+        <li>Jawaharlal Nehru National Solar Mission: <a href="http://www.mnre.gov.in/file-manager/UserFiles/mission_document_JNNSM.pdf" target="_blank">http://www.mnre.gov.in/file-manager/UserFiles/mission_document_JNNSM.pdf</a></li>
+        <li>Pentair Products and Efforts: <a href="http://www.pentair.com/Index.aspx" target="_blank">http://www.pentair.com/Index.aspx</a></li>
+        <li>TV Veopar Journal (April 2012 issue): <a href="http://www.adi-media.com/PDF/TVJ/annual_issue/011-Water-Purifiers.pdf" target="_blank">http://www.adi-media.com/PDF/TVJ/annual_issue/011-Water-Purifiers.pdf</a></li>
+        <li>Solar Water Treatment: <a href="http://climatelab.org/Solar_Water_Treatment" target="_blank">http://climatelab.org/Solar_Water_Treatment</a></li>
+        <li>Solar Energy for El Paso: <a href="http://www.epsea.org/stills.html" target="_blank">http://www.epsea.org/stills.html</a></li>
+        <li>Ten Years of Solar Distillation Application Along the US - Mexico Border: <a href="http://www.sunstar-solutions.com/10yrsStillsPaper.PDF" target="_blank">http://www.sunstar-solutions.com/10yrsStillsPaper.PDF</a></li>
+        <li><a href="https://energypedia.info/wiki/India_Energy_Situation" target="_blank">India Energy Situation</a></li>
+        <li><a href="https://energypedia.info/wiki/Portal:Solar" target="_blank">Portal:Solar</a></li>
+      </ul>
+    </section>
+
+    <!-- REFERENCES -->
+    <section id="references">
+      <h1>References</h1>
+      <ol>
+        <li>Solar Water Treatment: <a href="http://climatelab.org/Solar_Water_Treatment" target="_blank">http://climatelab.org/Solar_Water_Treatment</a></li>
+        <li>National Institute of Ocean Technology: <a href="http://www.niot.res.in/projects/desal/desalination_introduction.php" target="_blank">http://www.niot.res.in/projects/desal/desalination_introduction.php</a></li>
+        <li>Department of Science &amp; Technology: <a href="http://www.dst.gov.in/about_us/ar10-11/PDF/c_4_solar%20.pdf" target="_blank">http://www.dst.gov.in/about_us/ar10-11/PDF/c_4_solar%20.pdf</a></li>
+        <li>Gerindtec: <a href="http://www.gerindtec.com/" target="_blank">http://www.gerindtec.com/</a></li>
+        <li>The Indian Express (January 2012) - BARC develops low-cost solar water purifier: <a href="http://www.indianexpress.com/news/barc-develops-lowcost-solar-water-purifier/905025/" target="_blank">http://www.indianexpress.com/news/barc-develops-lowcost-solar-water-purifier/905025/</a></li>
+        <li>Developing Indigenous Resources - India: <a href="http://www.dir-help.org/projects/india/september09.html" target="_blank">http://www.dir-help.org/projects/india/september09.html</a></li>
+        <li>Solvatten Safe Water System: <a href="http://www.solvatten.se/aboutaboutsolvatten/about-solvatten/" target="_blank">http://www.solvatten.se/aboutaboutsolvatten/about-solvatten/</a></li>
+        <li>Advantage Environment - Solar Powered Water Purification: <a href="http://advantage-environment.com/livsmedel/solar-powered-water-purification/" target="_blank">http://advantage-environment.com/livsmedel/solar-powered-water-purification/</a></li>
+        <li>Mörk Water Solutions: <a href="http://moerkwater.com/pilot-project/" target="_blank">http://moerkwater.com/pilot-project/</a></li>
+        <li>Pentair Project Safe Water: Kureb: <a href="http://www.projectsafewater.com/Kureb.html" target="_blank">http://www.projectsafewater.com/Kureb.html</a></li>
+        <li>TV Veopar Journal (April 2012): <a href="http://www.adi-media.com/PDF/TVJ/annual_issue/011-Water-Purifiers.pdf" target="_blank">http://www.adi-media.com/PDF/TVJ/annual_issue/011-Water-Purifiers.pdf</a></li>
+        <li>The Water Purifier Market Today: <a href="http://www.waterpurifiers.in/all-about-water-purifiers/the-water-purifier-market-today.html" target="_blank">http://www.waterpurifiers.in/all-about-water-purifiers/the-water-purifier-market-today.html</a></li>
+        <li>TV Veopar Journal (April 2012): <a href="http://www.adi-media.com/PDF/TVJ/annual_issue/011-Water-Purifiers.pdf" target="_blank">http://www.adi-media.com/PDF/TVJ/annual_issue/011-Water-Purifiers.pdf</a></li>
+        <li>Ten Years of Solar Distillation Application Along the US - Mexico Border: <a href="http://www.sunstar-solutions.com/10yrsStillsPaper.PDF" target="_blank">http://www.sunstar-solutions.com/10yrsStillsPaper.PDF</a></li>
+        <li>EPSEA Solar Water Purification Project: <a href="http://www.networkearth.org/naturalbuilding/distiller.html" target="_blank">http://www.networkearth.org/naturalbuilding/distiller.html</a></li>
+        <li>Ten Years of Solar Distillation Application Along the US - Mexico Border: <a href="http://www.sunstar-solutions.com/10yrsStillsPaper.PDF" target="_blank">http://www.sunstar-solutions.com/10yrsStillsPaper.PDF</a></li>
+        <li>Jawaharlal Nehru National Solar Mission - Towards Building Solar India: <a href="http://www.mnre.gov.in/file-manager/UserFiles/mission_document_JNNSM.pdf" target="_blank">http://www.mnre.gov.in/file-manager/UserFiles/mission_document_JNNSM.pdf</a></li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h1>Contact Info</h1>
+      <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLScOJnlgGAs8jJgrlTHoG6Oz5J6-ZWTcNy4JQJZafGdgOFiZ8A/viewform?embedded=true" title="Contact Information">Loading…</iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <h2>Solar Pure Water</h2>
+    <nav>
+      <a href="#about">About me</a>
+      <a href="#technology">The Technology</a>
+      <a href="#research">Research</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#market">The Market</a>
+      <a href="#further">Further Info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+   <li style="text-align: center; margin: 2px;">Tarun Manghani || Dezyne E'cole College || BCA Sem 3rds </li>
+
+  <button id="topBtn" title="Go to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
